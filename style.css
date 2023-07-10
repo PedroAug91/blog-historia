@@ -16,7 +16,6 @@ html {
 
 body {
     margin: 0;
-    border: 1px solid black;
 }
 
 section {
@@ -45,6 +44,7 @@ img {
 .hero h1{
     color: white;
     text-align: center;
+    text-shadow: 5px 5px 4px black;
     font-family: BebasNeue;
     font-size: 96px;
     font-style: normal;
@@ -82,7 +82,7 @@ div.background {
 }
 
 .content-1 p{
-    border-left: 4px solid #250075;
+    border-left: 4px solid #002d62;
     padding-left: 6px;
     margin: 0;
     display: flex;
@@ -101,7 +101,7 @@ div.container{
 
 .content-2 {
     height: auto;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .content-2 header{
@@ -166,7 +166,7 @@ div.container{
 }
 
 footer {
-    margin: 30px 0 0 0;
+    margin: 0;
     height: 500px;
     background-image: linear-gradient(45deg, #002d62 0%, #3e3d3d 100%);
 }
@@ -176,18 +176,42 @@ footer h1{
     position: relative;
     top: 40px;
     width: 120px;
-    margin: 0 0 40px 147px;
+    margin: 0;
 }
 
-
-.fontes {
-    margin: 20px 147px;
-    display: flex;
-    justify-content: flex-start;
+.fontes ul {
+    padding: 40px 0 0 20px;
+    margin: 0;
+    width: 300px;
 }
 
 li {
-    list-style: none;
     margin: 17px 0;
 }
+
+.fontes a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.fontes a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0074D9;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
 
