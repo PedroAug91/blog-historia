@@ -174,7 +174,16 @@ footer {
 }
 
 
-footer h1{
+
+footer .background{
+    display: flex;
+}
+
+footer .background div{
+    width: 458px;
+}
+
+.fontes h1{
     position: relative;
     top: 40px;
     width: 120px;
@@ -182,12 +191,12 @@ footer h1{
 }
 
 .fontes ul {
-    padding: 40px 0 0 20px;
+    padding: 40px 0 80px 20px;
     margin: 0;
     width: 300px;
 }
 
-li {
+.fontes ul li {
     margin: 17px 0;
 }
 
@@ -206,6 +215,19 @@ li {
   height: 2px;
   background-color: #0074D9;
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+
+.sobre h1{
+    margin: 0;
+    position: relative;
+    top: 40px;
+}
+
+.sobre p{
+    margin: 0;
+    padding: 57px 0 80px 0;
+    line-height: 24px;
 }
 
 @media (hover: hover) and (pointer: fine) {
