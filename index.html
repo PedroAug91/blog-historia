@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" media="all">
+    <title></title>
+</head>
+<body>
+    <section class="hero">
+        <h1>Problema Norteador</h1>
+    </section>
+    <section class="content-1">
+        <div class="background">
+            <h1>Política, ciência e religião na antiguidade clássica</h1>
+            <h4>A visão Marxista sobre a inflûencia da religião na sociedade</h4>
+            <div class="container">
+                <p>texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto</p>
+                <a href="https://pt.wikipedia.org/wiki/Karl_Marx" target="_blank">
+                    <img id="marx"src="media/KarlMarx.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="content-2">
+        <div class="background">
+            <header><H1>Vídeos</H1></header>
+            <div class="video-container">
+                <div class="video">
+                    <video src="media/vid1.mp4"></video>
+                </div>
+                <div class="video">
+                    <video src="media/vid2.mp4"></video>
+                </div>
+                <div class="video">
+                    <video src="media/vid1.mp4"></video>
+                </div>
+                <div class="video">
+                    <video src="media/vid2.mp4"></video>
+                </div>
+            </div>
+            <div class="video-container">
+                <div class="video big">
+                    <video src="media/vid2.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h1>Fontes</h1>
+        <div class="fontes">
+            <ul>
+                <li><a href="">Texto Texto Texto Texto Texto</a></li>
+                <li><a href="">Texto Texto Texto Texto Texto</a></li>
+                <li><a href="">Texto Texto Texto Texto Texto</a></li>
+            </ul>
+            <ul>
+                <li><a href="">Texto Texto Texto Texto Texto</a></li>
+                <li><a href="">Texto Texto Texto Texto Texto</a></li>
+                <li><a href="">Texto Texto Texto Texto Texto</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        var video = document.querySelectorAll('video')
+        video.forEach(play => play.addEventListener('click',() =>{
+            play.classList.toggle('active');
+            play.currentTime=3;
+            if(play.paused){
+                play.play();
+            } else{
+                play.pause();
+                play.currentTime=0;
+            }
+        }))
+    </script>
+</body>
+</html>
