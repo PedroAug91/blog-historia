@@ -12,6 +12,7 @@
 html {
     font-family: RobotoCondensed;
     color: white;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -231,4 +232,18 @@ footer a::before{
 
 .alunos {
     padding-left: 20px;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home ul li{
+    list-style: none;
+}
+
+.home a{
+    font-size: 30px;
 }
