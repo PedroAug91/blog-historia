@@ -43,10 +43,11 @@ img {
 
 .hero h1{
     color: white;
+    margin: 0 60px 0 60px;
     text-align: center;
     text-shadow: 5px 5px 4px black;
     font-family: BebasNeue;
-    font-size: 96px;
+    font-size: 46px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -59,6 +60,7 @@ div.background {
 .content-1 {
     padding-top: 100px;
     background-image: linear-gradient(45deg, #7b7474 0%, #2f2a32 53%);
+    height: auto;
 }
 
 .content-1 h1 {
@@ -81,22 +83,28 @@ div.background {
 
 }
 
-.content-1 p{
+article {
     border-left: 4px solid #002d62;
-    padding-left: 6px;
+    padding-left: 16px;
+}
+
+.content-1 article p{
     margin: 0;
     display: flex;
-    width: 558px;
-    font-size: 26px;
+    width: 658px;
+    font-size: 24px;
     font-style: italic;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 100;
+    line-height: 33px;
+    text-indent: 40px;
+    margin-top: 8px;
 }
 
 div.container{
+    padding: 50px 0 100px 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .content-2 {
@@ -117,53 +125,34 @@ div.container{
 
 .video-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    transition: all .3s;
 }
+
 .video-container .video{
-    height: 15rem;
-    width: 25rem;
+    transition: all .3s;
+    height: 16rem;
+    width: 26rem;
     margin: 2rem;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.5);
     overflow: hidden;
     border-radius: 1rem;
 }
 
-
 .video-container .video video{
-    transition: all .3s;
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    outline: none;
-    border: none;
-    cursor: pointer;
 }
 
-.video-container .video video:hover{
-    transition: .3s linear;
+.video-container .video:hover{
     transform: scale(1.1);
+    transition: all .4s;
 }
 
-.video-container .video .active{
-    border-radius: 12px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: auto;
-    width: 80%;
-    box-shadow: 0 0 0 100vg rgba(0,0,0,.7);
-    z-index: 1;
-}
-
-.video-container .video .active:hover {
-    transition: none;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.video-container .big {
-    width: 864px;
+.video-container .big{
+    width: 950px;
     height: auto;
 }
 
@@ -177,36 +166,42 @@ footer {
 
 footer .background{
     display: flex;
+    justify-content:space-evenly;
 }
 
 footer .background div{
-    width: 458px;
+    width: 352px;
 }
 
-.fontes h1{
+
+footer .background h1{
     position: relative;
     top: 40px;
     width: 120px;
     margin: 0;
 }
 
-.fontes ul {
+footer .background ul {
     padding: 40px 0 80px 20px;
     margin: 0;
     width: 300px;
 }
 
-.fontes ul li {
+footer .background ul li {
     margin: 17px 0;
 }
 
-.fontes a {
+.background .sobre {
+    width: 432px;
+}
+
+footer a {
     color: white;
     text-decoration: none;
     position: relative;
 }
 
-.fontes a::before{
+footer a::before{
   content: '';
   position: absolute;
   bottom: 0;
@@ -218,16 +213,12 @@ footer .background div{
 }
 
 
-.sobre h1{
-    margin: 0;
-    position: relative;
-    top: 40px;
-}
 
 .sobre p{
     margin: 0;
     padding: 57px 0 80px 0;
     line-height: 24px;
+    text-indent: 38px;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -238,4 +229,6 @@ footer .background div{
   }
 }
 
-
+.alunos {
+    padding-left: 20px;
+}
