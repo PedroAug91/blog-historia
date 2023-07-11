@@ -141,7 +141,7 @@ div.container{
     border-radius: 1rem;
 }
 
-.video-container .video video{
+.video-container .video iframe{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -152,9 +152,9 @@ div.container{
     transition: all .4s;
 }
 
-.video-container .big{
-    width: 950px;
-    height: auto;
+.video-container #big{
+    width: 1000px;
+    height: 600px;
 }
 
 footer {
